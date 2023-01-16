@@ -1,0 +1,29 @@
+body {
+	background-color: #849ed8;
+}
+h1 {
+	font-family: "Monaco", monospace;
+	font-size: 40px;
+
+}
+h2 {
+	font-family: "Monaco", monospace;
+	font-size: 25px;
+}
+
+h3 {
+	font-family: "Monaco", monospace;
+	font-size: 50px;
+}
+table {
+	width: 100%;
+}
+td.VideoStream {
+	width: 45%;
+}
+td.SignImage {
+	width: 30%;
+}
+td.VidSignText {
+	width: 25%;
+}
