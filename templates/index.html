@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+
+	<audio id="ThankyouSound" src="{{url_for('static', filename='sounds/Thankyou.wav')}}" preload="auto"></audio>
+	<audio id="YesSound" src="{{url_for('static', filename='sounds/Yes.wav')}}" preload="auto"></audio>
+	<audio id="NoSound" src="{{url_for('static', filename='sounds/No.wav')}}" preload="auto"></audio>
+	<audio id="GoodbyeSound" src="{{url_for('static', filename='sounds/Goodbye.wav')}}" preload="auto"></audio>
+	<audio id="HelloSound" src="{{url_for('static', filename='sounds/Hello.wav')}}" preload="auto"></audio>
+	<audio id="IloveyouSound" src="{{url_for('static', filename='sounds/Iloveyou.wav')}}" preload="auto"></audio>
+	<audio id="PleaseSound" src="{{url_for('static', filename='sounds/Please.wav')}}" preload="auto"></audio>
+	<audio id="SorrySound" src="{{url_for('static', filename='sounds/Sorry.wav')}}" preload="auto"></audio>
+	<audio id="YouarewelcomeSound" src="{{url_for('static', filename='sounds/Youarewelcome.wav')}}" preload="auto"></audio>
+
+</head>
+
+
+<body>
+
+<h1 align = "center">Sign Language to Audio</h1>
+
+<table>
+	<tr>
+		<td class="VideoStream">
+			<h2 align = "center" >Video Stream:</h2>
+			<canvas id ="videoArea"></canvas>
+            <video autoplay="true" id="videoElement"></video>
+		</td>
+		<td class="SignImage">
+			<h2 align = "left" >Sign Detected:</h2>
+			<img align = "center" id = "signSelected" src="{{url_for('static', filename='images/yes-signlanguage.png')}}" width="200" height="200"></img>
+		</td>
+		<td class="SignText">
+			<h2 align = "center" >Sign:</h2>
+			<h3 align = "center" id = "signText">Yes</h3>
+  			<!-- <button align = "center" id = "signSound" onclick="playSound();">Play Sound</button> -->
+		</td>
+	</tr>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+<div class = 'video'>
+    <img id="image">
+</div>
+
+<!-- <button onclick="changeSign();">Change Sign</button> -->
+
+</body>
+
+<!-- <script> 
+	var activeSign = "No";  //figure out how to set the sign based on output of CV algorithm
+	var SignsList = Array("No", "Yes", "Thankyou", "Goodbye", "Hello", "Iloveyou", "Please", "Sorry", "Youarewelcome");
+	function changeSign() 
+	{
+		activeSign = value
+
+
+		console.log(activeSign)
+
+
+		if (activeSign == "No") {
+			document.getElementById("signSelected").src="{{url_for('static', filename='images/no-signlanguage.png')}}";
+			document.getElementById('signText').innerHTML = 'No';
+		}
+		if (activeSign == "Yes") {
+			document.getElementById("signSelected").src="{{url_for('static', filename='images/yes-signlanguage.png')}}"
+			document.getElementById('signText').innerHTML = 'Yes';
+		}
+		if (activeSign == "Thankyou") {
+			document.getElementById("signSelected").src="{{url_for('static', filename='images/thankyou-signlanguage.png')}}"
+			document.getElementById('signText').innerHTML = 'Thank you';
+		}
+		if (activeSign == "Goodbye") {
+			document.getElementById("signSelected").src="{{url_for('static', filename='images/goodbye-signlanguage.png')}}"
+			document.getElementById('signText').innerHTML = 'Goodbye';
+		}
+		if (activeSign == "Hello") {
+			document.getElementById("signSelected").src="{{url_for('static', filename='images/hello-signlanguage.png')}}"
+			document.getElementById('signText').innerHTML = 'Hello';
+		}
+		if (activeSign == "Iloveyou") {
+			document.getElementById("signSelected").src="{{url_for('static', filename='images/iloveyou-signlanguage.png')}}"
+			document.getElementById('signText').innerHTML = 'I love you';
+		}
+		if (activeSign == "Please") {
+			document.getElementById("signSelected").src="{{url_for('static', filename='images/please-signlanguage.png')}}"
+			document.getElementById('signText').innerHTML = 'Please';
+		}
+		if (activeSign == "Sorry") {
+			document.getElementById("signSelected").src="{{url_for('static', filename='images/sorry-signlanguage.png')}}"
+			document.getElementById('signText').innerHTML = 'Sorry';
+		}
+		if (activeSign == "Youarewelcome") {
+			document.getElementById("signSelected").src="{{url_for('static', filename='images/youarewelcome-signlanguage.png')}}"
+			document.getElementById('signText').innerHTML = 'You are welcome';
+		}
+	}
+
+	function playSound() 
+	{
+		if (activeSign == "No") {
+			document.getElementById("NoSound").play();
+		}
+		if (activeSign == "Yes") {
+			document.getElementById("YesSound").play();
+		}
+		if (activeSign == "Thankyou") {
+			document.getElementById("ThankyouSound").play();
+		}
+		if (activeSign == "Goodbye") {
+			document.getElementById("GoodbyeSound").play();
+		}
+		if (activeSign == "Hello") {
+			document.getElementById("HelloSound").play();
+		}
+		if (activeSign == "Iloveyou") {
+			document.getElementById("IloveyouSound").play();
+		}
+		if (activeSign == "Please") {
+			document.getElementById("PleaseSound").play();
+		}
+		if (activeSign == "Sorry") {
+			document.getElementById("SorrySound").play();
+		}
+		if (activeSign == "Youarewelcome") {
+			document.getElementById("YouarewelcomeSound").play();
+		}
+	}
+
+</script> -->
+
+</html>
+<!-- <!doctype html>
+
+<title>Test</title> 
+<meta charset=utf-8> 
+
+<a href="/my-link/">Click me</a> -->
+
+<!-- 
+<!doctype html>
+<html>
+<head>
+  <title>Some title</title>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <h2>Form</h2>
+  <form action="/text" method="post">
+    Input text:<br>
+    <input type="text" name="text_input" value="">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <div id='foo'>
+    <br>
+    {% for comment in comments %}
+    <div class="row">
+      {{ comment }} 
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html> -->
