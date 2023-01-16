@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "verdant-medley-331714",
+  "private_key_id": "f324d95462430d471211425a3921c07642795460",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDyx81YTmIXKrAJ\nniNGJ+SotDY4Z2kP4PzpPMWCv94YbaHvUHkoapUkpUbGveqSJQwRYkstX6Y8FYVJ\njcrEKMpKTkvjkjWG2LTrb+NBqlJlHXfHPNqeyc1w1QTrjnGDwQbj6rQtrsNWtm9y\nQcxVRLxs6HfO0tsr5fVKifAOBheCL5jSLlk6fS4REoR2SQXi2DES4OTRWYXzpFXV\nITTX9wRwvVB3bGkNsbD7RHdUzXT9C0PorC3NRuZVgbsy3c8Edir6KmSpoU7TTKPk\n8FFhddGyX07VR26r3s9nMfl15szzR4Oi3MpeTUs9Wlb5/DoJM4gsVUlTSPcGtKeW\n/VLhk3SnAgMBAAECggEASFopJTb+3p6XJdad9otvBqPmQLr4wYWweaXlysh5XNhX\nWSWnZdcVqX0j8ZiprnIh/ZBIjTYjKWbUeQ4rrnfliW16ClEJaK1uhXerx2cF9SJq\nDtNg58+GTSj+tWCXDcfZ0NSia7bYeiAWaHuZdJPuf5psEhQewx9eEZ+4DcXc/auz\nDA8lgBLMkmetXn5FpiusnqMrt2Mt6b+fqHSR6+JY/aEUJnvDwm35iqOUPesLeufM\ntgMs58s/2bv6s/Dewln501YWDk4diCRdKdCzSLBqBjMkCwVoUrN2eL08ol6FHo49\nbb1uomRcuoLPTgMAdQ8ICNkgr5WAi7hV7vk+QPzrIQKBgQD6Wdw7oxWRgM7CKH/8\nfgcRcw7umKchW7Eag6Xaw1srm6CStAIw1S4RGG3GN1+5ikDAAnZyeIQTNdPNzJuD\n2odMK89q+i5lXzgTjgr42cGr6wROeEPMwyCSbPn8omlWAyJBkqnAGnkMs+mGx+eZ\nK9FKvJd/I8bSb8gjQILBOh6INwKBgQD4QjYE6ElP3qFf8aUsTli8MA5vP2IKdION\nNktO9aHuMqHm4wtK+ZAdwt5BoVm8/ue5NZpK5YDwSbDU2bN+JgfTDsrXcZsnV9J8\nTxyk/k2Zar/wJbwJFsQRluG8eV/6z3AdTCDKLBd4a7FoplbDEv/k6TEuF/3FGXYz\nht5uVwBfEQKBgDGbQLJofEualF2QnNuxNUFV5S2N/f/0JUG1uFWCxDv92HF5Tb3T\nYA9vIcFXE5a2OGJTmpjQHIuZ7OAonOAhmxGS1MTD0hGwLnJhgPcSXvfr16yc1AJs\n37Vj9p0CqZCrikwn/Y7dMAM+WxWj4tZNAmmmuPYuZqUoFSY3EDGtjIM9AoGAM1MU\n8ezIA1AmkrxVhpRn+fgBc/Rpo3m1HMOlzBwyLxmeqSo1UnnH1q9L3cuqzszwQTUY\nwfUys/q4KTkcx667HWJIg0QEbJzWcka0yFOe3WHZbp+OgV6IiI5l+t4o/qRWLGhp\nuwJkk8vH8Le65jeOWdfwB/SDzXTXIA34/FzWQdECgYEA7t7WRMARXisFcCPk1xaP\nLrLxtc6rN2dkf1euzibccSbhR44QuLop6V+TW+VG+uvaiVQP9w0XIhRE8QocKAyg\n9kzNHvYt26uZnlt5xt29uM+SqYnSdzPYDArXUa/fpKJXpMBLpuTA5OQ2Td9XcbIm\nXt1anesrsuP2uvy2O5HbC54=\n-----END PRIVATE KEY-----\n",
+  "client_email": "my-tts-sa@verdant-medley-331714.iam.gserviceaccount.com",
+  "client_id": "117293212513289849001",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/my-tts-sa%40verdant-medley-331714.iam.gserviceaccount.com"
+}
